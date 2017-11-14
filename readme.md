@@ -10,7 +10,7 @@ All other foreman like process managers doesn't have a proper stop feature to en
 
 ## Installation and Usage
 ```
-$ go get github.com/bytegust/spm/cmd/spm
+$ go get github.com/ilgooz/spm/cmd/spm
 $ spm -h
 
 Simple Process Manager.
@@ -32,7 +32,7 @@ Commands:
     list            Lists all running jobs
     logs <job>      Prints last 200 lines of job's logfile 
 
-Documentation can be found at https://github.com/bytegust/spm
+Documentation can be found at https://github.com/ilgooz/spm
 ```
 
 ## Example
@@ -42,7 +42,7 @@ Following Procfile has two jobs (tabs for legibility):
 ```
 # Serve spm's github repository on local machine
 repo:   rm -rf spm && \
-        git clone https://github.com/bytegust/spm.git && \
+        git clone https://github.com/ilgooz/spm.git && \
         http-server ./spm -p 8080
 
 # Download and serve a webpage on local machine
